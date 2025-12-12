@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caravan Writes - The Copywriting Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        indigo: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        }
+                    }
+                }
+            },
+            plugins: [
+                require('@tailwindcss/typography'), // Enables the 'prose' class
+            ],
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        :root {
+            --primary-color: #4f46e5; /* Indigo-600 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f8fc;
+        }
+
+        /* Smooth fade animation for sections */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-16" role="navigation">
+                <div class="flex items-center space-x-6 text-base font-medium" role="tablist">
+                    <a href="#popular" data-page="popular" class="nav-link px-3 py-2 rounded-lg transition duration-150 ease-in-out text-gray-600 hover:text-indigo-600 hover:bg-indigo-50" role="tab" aria-controls="popular-content">Popular</a>
+                    <a href="#trending" data-page="trending" class="nav-link px-3 py-2 rounded-lg transition duration-150 ease-in-out text-gray-600 hover:text-indigo-600 hover:bg-indigo-50" role="tab" aria-controls="trending-content">Trending</a>
+                </div>
+
+                <a href="#home" data-page="home" class="nav-link-home text-xl font-extrabold text-gray-900 tracking-wider transition duration-150 ease-in-out hover:text-indigo-600" aria-current="page">
+                    Caravan Writes
+                </a>
+
+                <div class="flex items-center space-x-6 text-base font-medium" role="tablist">
+                    <a href="#about" data-page="about" class="nav-link px-3 py-2 rounded-lg transition duration-150 ease-in-out text-gray-600 hover:text-indigo-600 hover:bg-indigo-50" role="tab" aria-controls="about-content">About Us</a>
+                    <a href="#more" data-page="more" class="nav-link px-3 py-2 rounded-lg transition duration-150 ease-in-out text-gray-600 hover:text-indigo-600 hover:bg-indigo-50" role="tab" aria-controls="more-content">More</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="min-h-screen py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="content-container">
+                
+                <section id="home" class="content-page flex flex-col items-center text-center py-10 fade-in" tabindex="-1">
+                    <h1 class="text-6xl sm:text-7xl lg:text-9xl font-black text-gray-900 tracking-tight leading-none mb-4">
+                        Caravan Writes
+                    </h1>
+                    <p class="text-xl sm:text-2xl lg:text-3xl font-medium text-indigo-600 mt-4 mb-12 max-w-2xl">
+                        Words that travel. Stories that land. Conversion copy built for movement.
+                    </p>
+                    
+                    <div class="w-full max-w-4xl mx-auto px-4 sm:px-0">
+                        <h2 class="text-lg font-bold tracking-widest text-gray-700 uppercase mb-4 pt-8 border-t-2 border-indigo-200">
+                            CATEGORIES
+                        </h2>
+
+                        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8 mt-6">
+                            <a href="#science" data-page="science" class="nav-link category-tab px-10 py-4 text-xl font-semibold rounded-xl text-indigo-700 bg-white shadow-lg border border-gray-100 transition duration-300 ease-in-out transform hover:scale-[1.03] hover:shadow-2xl hover:bg-indigo-50" role="tab" aria-controls="science-content">
+                                Science
+                            </a>
+                            <a href="#world" data-page="world" class="nav-link category-tab px-10 py-4 text-xl font-semibold rounded-xl text-indigo-700 bg-white shadow-lg border border-gray-100 transition duration-300 ease-in-out transform hover:scale-[1.03] hover:shadow-2xl hover:bg-indigo-50" role="tab" aria-controls="world-content">
+                                World
+                            </a>
+                            <a href="#schools" data-page="schools" class="nav-link category-tab px-10 py-4 text-xl font-semibold rounded-xl text-indigo-700 bg-white shadow-lg border border-gray-100 transition duration-300 ease-in-out transform hover:scale-[1.03] hover:shadow-2xl hover:bg-indigo-50" role="tab" aria-controls="schools-content">
+                                Schools
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-5xl mx-auto mt-16 px-4 sm:px-0">
+                        <h2 class="text-lg font-bold tracking-widest text-gray-700 uppercase mb-8 pt-8 border-t-2 border-indigo-200">
+                            TESTIMONIALS :
+                        </h2>
+                        
+                        <div class="grid md:grid-cols-3 gap-6 text-left">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-50 hover:shadow-xl transition duration-300">
+                                <div class="text-indigo-500 text-4xl font-serif mb-2">“</div>
+                                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                                    Caravan Writes transformed our vague ideas into a compelling narrative. Their ability to switch tones from professional to playful is unmatched!
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-xs mr-3">SJ</div>
+                                    <div>
+                                        <p class="text-xs font-bold text-gray-900">Sarah Jenkins</p>
+                                        <p class="text-[10px] text-gray-500 uppercase tracking-wide">Marketing Director</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-50 hover:shadow-xl transition duration-300">
+                                <div class="text-indigo-500 text-4xl font-serif mb-2">“</div>
+                                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                                    Fast, efficient, and spot-on every time. I’ve worked with many copywriters, but this team consistently delivers gold ahead of schedule.
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-xs mr-3">MT</div>
+                                    <div>
+                                        <p class="text-xs font-bold text-gray-900">Mike Thompson</p>
+                                        <p class="text-[10px] text-gray-500 uppercase tracking-wide">Startup Founder</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-50 hover:shadow-xl transition duration-300">
+                                <div class="text-indigo-500 text-4xl font-serif mb-2">“</div>
+                                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                                    Our email open rates jumped by 40% after we switched to their copy. The ROI speaks for itself. Highly recommended!
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-xs mr-3">ER</div>
+                                    <div>
+                                        <p class="text-xs font-bold text-gray-900">Elena Rodriguez</p>
+                                        <p class="text-[10px] text-gray-500 uppercase tracking-wide">E-commerce Mgr.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="popular" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-8 border-b pb-2" id="popular-content">Popular Work</h2>
+                    <div class="space-y-8">
+                        
+                        <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-indigo-600">
+                            <span class="text-sm font-semibold inline-block py-1 px-3 rounded-full text-white bg-indigo-600 mb-4">Featured Case Study</span>
+                            <h3 class="text-3xl font-bold text-gray-900 mb-4">Procurement Evolved: Why Amazon Business is the Strategic Edge Your Company Needs</h3>
+                            
+                            <div class="prose max-w-none text-gray-700 leading-relaxed space-y-4">
+                                <p>In the modern landscape of commerce, the difference between a thriving business and a stagnating one often lies in the margins. It lies in how efficiently you source materials, how quickly you can equip your teams, and how much visibility you have over every dollar spent.</p>
+                                <p>For millions of consumers, Amazon is the gold standard for convenience. But for decision-makers—from agile startups to Fortune 100 enterprises—Amazon Business has quietly become the gold standard for procurement strategy.</p>
+                                <p class="font-bold italic text-lg text-gray-800">If your company is still using a fragmented network of vendors or personal retail accounts for business purchasing, you are leaving money, time, and data on the table.</p>
+                                
+                                <h4 class="text-xl font-bold pt-4 text-indigo-700">The Business Case: More Than Just "Ordering Online"</h4>
+                                <p>Amazon Business is not simply the retail site you know with a different logo. It is a sophisticated B2B marketplace engineered to solve the specific friction points of corporate purchasing.</p>
+
+                                <h5 class="font-semibold text-lg">1. Pricing That Scales With You</h5>
+                                <p>The retail price is rarely the best price. Amazon Business unlocks exclusive pricing structures unavailable to standard consumers:</p>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <li>**Business-Only Pricing:** Access millions of products with special pricing reserved solely for registered business accounts.</li>
+                                    <li>**Quantity Discounts:** Buying for the whole office? Tiered discounts kick in automatically on eligible bulk orders starting at just two units.</li>
+                                    <li>**Request for Quote (RFQ):** For massive orders, you can solicit custom discounted quotes directly from suppliers, ensuring you never overpay for volume.</li>
+                                </ul>
+
+                                <h5 class="font-semibold text-lg pt-2">2. Cash Flow & Tax Management</h5>
+                                <p>Cash flow is the lifeline of any operation. Amazon Business provides financial tools that align with corporate accounting cycles:</p>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <li>**Pay by Invoice:** Eligible businesses can apply for extended payment terms (e.g., Net 30, 45, or 60 days), allowing you to receive goods now and pay later—bridging critical cash flow gaps.</li>
+                                    <li>**Tax Exemption Program:** Upload your tax exemption certificates once, and the system automatically applies exemptions to eligible purchases across the entire marketplace. No more chasing suppliers for refunds.</li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold pt-4 text-indigo-700">Tailored Solutions for Every Stage of Growth</h4>
+                                <p>One of the platform's strongest assets is its elasticity. It molds to fit the solo entrepreneur just as well as the multinational procurement officer.</p>
+
+                                <h5 class="font-semibold text-lg">For Small Businesses & Startups</h5>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <li>**The "Duo" Advantage:** If you are a single-user business with a personal Prime membership, the Business Prime Duo plan is often free to add. It separates your personal and business spending instantly, simplifying tax season.</li>
+                                    <li>**Reduced Admin Time:** Instead of driving to three different stores for IT peripherals, breakroom supplies, and janitorial gear, you get everything in one consolidated shipment.</li>
+                                </ul>
+                                
+                                <h5 class="font-semibold text-lg pt-2">For Large Enterprises</h5>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <li>**Multi-User Accounts & Approval Workflows:** Create a single business account with multiple users. You can set spending limits for specific departments and require manager approval for purchases over a certain amount.</li>
+                                    <li>**Integration:** Amazon Business integrates seamlessly with over 100 e-procurement systems (like Coupa, Ariba, and Oracle), meaning your team can shop on Amazon while the data flows directly into your existing ERP.</li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold pt-4 text-indigo-700">The "Guided Buying" Revolution</h4>
+                                <p>Perhaps the most powerful feature for managers is Guided Buying (available with select Business Prime plans).</p>
+                                <p>Instead of micromanaging every purchase, you set the rules of the road.</p>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <li>**Prefer Local:** Mark local or certified diverse sellers (veteran-owned, women-owned) as "Preferred" to meet corporate social responsibility (CSR) goals.</li>
+                                    <li>**Restrict Categories:** Mark non-compliant categories (like video games or alcohol) as "Restricted," triggering a warning or blocking the purchase entirely.</li>
+                                    <li>**ROI Insight:** A 2023 study by Forrester Consulting found that large enterprises using Amazon Business realized a 324% Return on Investment (ROI) over three years, largely due to time savings and procurement efficiency.</li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold pt-4 text-indigo-700">The Data Advantage: Spend Visibility</h4>
+                                <p>You cannot optimize what you cannot see. The Spend Visibility dashboard turns your purchasing history into actionable intelligence.</p>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <li>**Visual Analytics:** See exactly where your budget is going by category, user, or department.</li>
+                                    <li>**Compliance Tracking:** Identify who is buying "off-contract" and adjust policies accordingly.</li>
+                                    <li>**Budgeting:** Use historical data to forecast next quarter's spend with higher accuracy.</li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold pt-4 text-indigo-700">Conclusion: It’s Time to Upgrade Your Buying Power</h4>
+                                <p>In an era where agility is paramount, Amazon Business offers a streamlined, data-driven, and cost-effective path to procurement. It combines the familiar, user-friendly interface your employees already love with the robust controls your finance team demands.</p>
+                                <p class="font-bold italic text-lg text-indigo-600">Stop buying like a consumer. Start sourcing like a market leader.</p>
+                            </div>
+                            </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-indigo-100">
+                                <span class="text-xs font-semibold inline-block py-1 px-3 rounded-full text-indigo-600 bg-indigo-100 mb-3">Email Sequence</span>
+                                <h3 class="text-2xl font-semibold text-gray-900 mb-2">3-Part Welcome Series</h3>
+                                <p class="text-gray-600">Engaging sequence designed for customer retention and prompt first purchase.</p>
+                                <a href="#" class="mt-4 text-indigo-600 font-medium inline-block hover:text-indigo-700">View Metrics &rarr;</a>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-indigo-100">
+                                <span class="text-xs font-semibold inline-block py-1 px-3 rounded-full text-indigo-600 bg-indigo-100 mb-3">Ad Copy</span>
+                                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Social Ad Kit (Facebook/IG)</h3>
+                                <p class="text-gray-600">A collection of top-performing ad creatives and copy for direct response marketing.</p>
+                                <a href="#" class="mt-4 text-indigo-600 font-medium inline-block hover:text-indigo-700">See Campaign &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="trending" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-8 border-b pb-2" id="trending-content">Trending Techniques</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">AI-Assisted Content Strategy</h3>
+                            <p class="text-gray-600">My process for leveraging large language models to rapidly generate topic clusters and first drafts, followed by human-led conversion optimization.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Personalized Video Scriptwriting</h3>
+                            <p class="text-gray-600">Exploring the current trend of hyper-personalized video scripts for outreach and sales enablement.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-8 border-b pb-2" id="about-content">Our Story</h2>
+                    <div class="bg-white p-8 rounded-xl shadow-lg space-y-4 text-lg">
+                        <p class="text-gray-700">
+                            Caravan Writes was founded on the idea that every business story needs motion. We don't just write; we architect words that lead the reader on a purposeful journey, driving them from curiosity to conversion.
+                        </p>
+                        <p class="text-gray-700">
+                            We specialize in long-form sales pages, technical documentation, and customer retention email funnels. Our goal is to blend compelling narrative with strategic psychological triggers to deliver maximum return on your content investment.
+                        </p>
+                        <p class="pt-4 font-semibold text-indigo-600">Ready to start your journey? Let's connect.</p>
+                    </div>
+                </section>
+
+                <section id="more" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-8 border-b pb-2" id="more-content">Services & Contact</h2>
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        
+                        <div class="bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Core Offerings</h3>
+                            <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                                <li>Long-Form Landing Page Copy</li>
+                                <li>Full Email Marketing Funnel Development</li>
+                                <li>SEO-Optimized Blog & Article Writing</li>
+                                <li>Conversion Rate Optimization (CRO) Consulting</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Get In Touch</h3>
+                            
+                            <div class="mb-6 space-y-2 text-sm">
+                                <p class="font-medium text-gray-700">
+                                    Instagram: 
+                                    <a href="https://www.instagram.com/official__caravan__writes" target="_blank" class="text-indigo-600 font-bold hover:underline">@official__caravan__writes</a>
+                                </p>
+                                <p class="font-medium text-gray-700">
+                                    Email: <span class="text-indigo-600 font-bold">official.caravan.writes@gmail.com</span>
+                                </p>
+                            </div>
+                            
+                            <div class="p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                                <p class="text-lg font-bold text-indigo-700 text-center">
+                                    Connect with us via Gmail or DM us for better communication!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="science" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-8 border-b pb-2" id="science-content">Science Articles</h2>
+                    <div class="bg-white p-8 rounded-xl shadow-lg space-y-4 text-lg">
+                        <p class="text-gray-700">
+                            Dive deep into the latest discoveries, from astrophysics to molecular biology. Explore stories that explain the world around us.
+                        </p>
+                        <p class="text-gray-500 italic">Content for Science will appear here!</p>
+                    </div>
+                </section>
+
+                <section id="world" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-8 border-b pb-2" id="world-content">World News and Global Perspectives</h2>
+                    <div class="bg-white p-8 rounded-xl shadow-lg space-y-4 text-lg">
+                        <p class="text-gray-700">
+                            Analyzing global events, cultural shifts, and major developments in policy and society. Your window to the world.
+                        </p>
+                        <p class="text-gray-500 italic">Content for World will appear here!</p>
+                    </div>
+                </section>
+
+                <section id="schools" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-8 border-b pb-2" id="schools-content">Education and School Life</h2>
+                    <div class="bg-white p-8 rounded-xl shadow-lg space-y-6 text-lg">
+                        <p class="text-gray-700 font-semibold text-2xl underline">
+                            Explore the world of schools! Choose Yours:
+                        </p>
+                        <ul class="space-y-4 text-gray-700">
+                            <li><a href="#golden" data-page="golden" class="nav-link text-xl text-fuchsia-600 hover:text-fuchsia-800 font-bold block py-2" role="tab" aria-controls="golden-content">Golden International School</a></li>
+                            <li><a href="#chameli" data-page="chameli" class="nav-link text-xl text-fuchsia-600 hover:text-fuchsia-800 font-bold block py-2" role="tab" aria-controls="chameli-content">Chameli Devi Public School</a></li>
+                            <li><a href="#dps" data-page="dps" class="nav-link text-xl text-fuchsia-600 hover:text-fuchsia-800 font-bold block py-2" role="tab" aria-controls="dps-content">Delhi Public School</a></li>
+                        </ul>
+                        <p class="text-gray-700">
+                            Stories focusing on education, student life, new learning techniques, and community impact. Inspiring the next generation.
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="golden" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-indigo-700 mb-8 border-b pb-2" id="golden-content">Golden International School Profile</h2>
+                    <div class="bg-white p-8 rounded-xl shadow-xl space-y-4 text-lg">
+                        <p class="text-gray-700">
+                            Welcome to the dedicated page for Golden International School! Here you'll find articles and content related to their curriculum, student achievements, and innovative programs.
+                        </p>
+                        <p class="text-gray-500 italic">This is the separate page for Golden International School.</p>
+                        <a href="#schools" data-page="schools" class="nav-link text-fuchsia-600 font-medium inline-block hover:text-fuchsia-800">&larr; Back to Schools List</a>
+                    </div>
+                </section>
+
+                <section id="chameli" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-indigo-700 mb-8 border-b pb-2" id="chameli-content">Chameli Devi Public School Profile</h2>
+                    <div class="bg-white p-8 rounded-xl shadow-xl space-y-4 text-lg">
+                        <p class="text-gray-700">
+                            Explore the history and mission of Chameli Devi Public School. This section showcases their commitment to holistic education and community values.
+                        </p>
+                        <p class="text-gray-500 italic">This is the separate page for Chameli Devi Public School.</p>
+                        <a href="#schools" data-page="schools" class="nav-link text-fuchsia-600 font-medium inline-block hover:text-fuchsia-800">&larr; Back to Schools List</a>
+                    </div>
+                </section>
+
+                <section id="dps" class="content-page hidden pt-8 fade-in" tabindex="-1">
+                    <h2 class="text-4xl font-extrabold text-indigo-700 mb-8 border-b pb-2" id="dps-content">Delhi Public School Profile</h2>
+                    <div class="bg-white p-8 rounded-xl shadow-xl space-y-4 text-lg">
+                        <p class="text-gray-700">
+                            A closer look at Delhi Public School, a center for academic excellence and diverse extracurricular activities. Find out about their latest news and events.
+                        </p>
+                        <p class="text-gray-500 italic">This is the separate page for Delhi Public School.</p>
+                        <a href="#schools" data-page="schools" class="nav-link text-fuchsia-600 font-medium inline-block hover:text-fuchsia-800">&larr; Back to Schools List</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 text-white p-6 mt-10">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            &copy; 2025 Caravan Writes. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        const contentPages = document.querySelectorAll('.content-page');
+        const homeLink = document.querySelector('.nav-link-home');
+        
+        // Function to handle page switching and link highlighting
+        const switchPage = (pageId) => {
+            // Hide all pages
+            contentPages.forEach(page => {
+                page.classList.add('hidden');
+            });
+
+            // Deactivate all links and reset ARIA attributes
+            navLinks.forEach(link => {
+                // Reset standard top nav link style
+                link.classList.remove('border-b-2', 'border-indigo-500', 'text-indigo-600', 'bg-indigo-50');
+                link.classList.add('text-gray-600', 'hover:text-indigo-600');
+                link.removeAttribute('aria-selected');
+
+                // Reset category tab style (Science, World, Schools)
+                if (link.classList.contains('category-tab')) {
+                    link.classList.remove('text-white', 'bg-indigo-600', 'shadow-xl', 'scale-[1.03]');
+                    link.classList.add('text-indigo-700', 'bg-white', 'shadow-lg');
+                }
+                
+                // Reset sub-link style inside the #schools page
+                 link.classList.remove('text-fuchsia-800', 'underline');
+                 link.classList.add('text-fuchsia-600');
+            });
+            
+            // Reset Home Link style and ARIA
+            homeLink.classList.remove('text-indigo-600');
+            homeLink.classList.add('text-gray-900');
+            homeLink.removeAttribute('aria-current');
+
+
+            // Show the requested page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+                
+                // Set focus to the content container for accessibility
+                // This informs screen readers that the content has changed
+                targetPage.focus();
+                
+                // Get the active link using template literals
+                const activeLink = document.querySelector(`.nav-link[data-page='${pageId}']`);
+                const schoolPages = ['golden', 'chameli', 'dps']; // Define school pages here
+
+                if (pageId === 'home') {
+                    // Special styling for the home link (Brand Name)
+                    homeLink.classList.add('text-indigo-600');
+                    homeLink.classList.remove('text-gray-900');
+                    homeLink.setAttribute('aria-current', 'page');
+                } else if (pageId === 'schools' || schoolPages.includes(pageId)) {
+                    // Highlight the main Schools category tab
+                    const schoolsCategoryTab = document.querySelector(".category-tab[data-page='schools']");
+                    if (schoolsCategoryTab) {
+                        schoolsCategoryTab.classList.add('text-white', 'bg-indigo-600', 'shadow-xl');
+                        schoolsCategoryTab.classList.remove('text-indigo-700', 'bg-white', 'shadow-lg');
+                        schoolsCategoryTab.setAttribute('aria-selected', 'true');
+                    }
+                    // Highlight the active sub-link within the Schools page
+                    if (schoolPages.includes(pageId)) {
+                        const subLink = document.querySelector(`#schools a[data-page='${pageId}']`);
+                        if(subLink) {
+                            subLink.classList.remove('text-fuchsia-600', 'hover:text-fuchsia-800');
+                            subLink.classList.add('text-fuchsia-800', 'underline');
+                            subLink.setAttribute('aria-selected', 'true');
+                        }
+                    }
+                } else if (activeLink && activeLink.classList.contains('category-tab')) {
+                    // Styling for other Category tabs (Science, World)
+                    activeLink.classList.add('text-white', 'bg-indigo-600', 'shadow-xl');
+                    activeLink.classList.remove('text-indigo-700', 'bg-white', 'shadow-lg');
+                    activeLink.setAttribute('aria-selected', 'true');
+                } else if (activeLink) {
+                    // Styling for regular top nav links (Popular, Trending, About Us, More)
+                    activeLink.classList.add('border-b-2', 'border-indigo-500', 'text-indigo-600');
+                    activeLink.classList.remove('text-gray-600', 'hover:text-indigo-600');
+                    activeLink.setAttribute('aria-current', 'page');
+                }
+            } else {
+                // Default to home if link is invalid
+                switchPage('home');
+            }
+        };
+
+        // Event listeners for navigation clicks
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageId = link.getAttribute('data-page');
+                switchPage(pageId);
+                history.pushState(null, '', link.getAttribute('href')); // Update URL hash
+            });
+        });
+        
+        homeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchPage('home');
+            history.pushState(null, '', homeLink.getAttribute('href')); // Update URL hash
+        });
+
+        // Handle page loading via URL hash
+        const initialLoad = () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                switchPage(hash);
+            } else {
+                switchPage('home');
+            }
+        };
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', initialLoad);
+        
+        // Initial page load
+        window.onload = initialLoad;
+        
+    </script>
+</body>
+</html>
